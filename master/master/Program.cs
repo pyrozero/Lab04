@@ -4,12 +4,13 @@ public class TryCatch
     static void Main(string[] args)
     {
         int a = 0;
+        int b = 10;
+
         try
         {
-
-            Console.WriteLine(100 / a);
+            b /= a;
         }
-        catch (NullReferenceException e)
+        catch (NullReferenceException e) when (a == 0)
         {
             Console.WriteLine(e.Message);
         }
@@ -18,4 +19,5 @@ public class TryCatch
             Console.WriteLine(e.Message);
         }
     }
+
 }
