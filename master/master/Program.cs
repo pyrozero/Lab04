@@ -4,18 +4,16 @@ public class IfLearning
 {
     public static void Main()
     {
-        int a = 10;
-        int b = 20;
-        if (a == 10)
-        {
-            if (b == 20)
-            {
-                Console.WriteLine("a = 10 and b = 20");
-            }
-            if (b != 20)
-            {
-                Console.WriteLine("a = 10 and b != 20");
-            }
-        }
+        int point = 68;
+        if (point < 50)
+            Console.WriteLine("Grade F");
+        else if (point < 60)
+            Console.WriteLine("Grade D");
+        else if (point < 70)
+            Console.WriteLine("Grade C");
+        else if (point < 80)
+            Console.WriteLine("Grade B");
+        else
+            Console.WriteLine("Grade A");
     }
 }
