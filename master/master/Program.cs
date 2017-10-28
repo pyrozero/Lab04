@@ -1,22 +1,17 @@
 ﻿using System;
-public class GotoTest
+
+namespace ConsoleApp2
 {
-    static void Main(string[] args)
+    class WhileTest
     {
-        Console.WriteLine("Line 1");
-        goto line4;
-        Console.WriteLine("Line 2");
-        Console.WriteLine("Line 3");
-        line4:
-        Console.WriteLine("Line 4");
-        Console.WriteLine("Line 5");
-        goto line1;
-        Console.WriteLine("Line 6");
-        
-        Console.WriteLine("Line 7");
-        Console.WriteLine("Line 8");
-        Console.WriteLine("Line 9");
-        line1:
-        Console.WriteLine("Line 10");
+        static void Main()
+        {
+            int n = 1;
+            while (n < 6)
+            {
+                Console.WriteLine("Current value of n is {0}", n);
+                n++;
+            }
+        }
     }
 }
