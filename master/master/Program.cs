@@ -1,22 +1,18 @@
 ﻿using System;
-public class GotoTest
+using System.IO;
+public class IfLearning
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        Console.WriteLine("Line 1");
-        goto line4;
-        Console.WriteLine("Line 2");
-        Console.WriteLine("Line 3");
-        line4:
-        Console.WriteLine("Line 4");
-        Console.WriteLine("Line 5");
-        goto line1;
-        Console.WriteLine("Line 6");
-        
-        Console.WriteLine("Line 7");
-        Console.WriteLine("Line 8");
-        Console.WriteLine("Line 9");
-        line1:
-        Console.WriteLine("Line 10");
+        int a = 2;
+        if (a == 2)
+        {
+            Console.WriteLine("execute this line");
+        }
+        if (a < 2)
+        {
+            Console.WriteLine("execute this line too");
+        }
+        Console.WriteLine("execute next line");
     }
 }
