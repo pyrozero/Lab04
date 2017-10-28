@@ -1,22 +1,41 @@
 ﻿using System;
-public class GotoTest
+using System.IO;
+
+public class switchLearning
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        Console.WriteLine("Line 1");
-        goto line4;
-        Console.WriteLine("Line 2");
-        Console.WriteLine("Line 3");
-        line4:
-        Console.WriteLine("Line 4");
-        Console.WriteLine("Line 5");
-        goto line1;
-        Console.WriteLine("Line 6");
-        
-        Console.WriteLine("Line 7");
-        Console.WriteLine("Line 8");
-        Console.WriteLine("Line 9");
-        line1:
-        Console.WriteLine("Line 10");
+        Console.Write("Input day name (sun,mon,tur,wed,thu,fri,sat): ");
+        string dayNameString = Console.ReadLine();
+        string message;
+
+        switch (dayNameString.ToLower())
+        {
+            case "sun":
+                message = "sun is Sunday, color Red";
+                break;
+            case "mon":
+                message = "mon is Monday, color Yellow";
+                break;
+            case "tue":
+                message = "tue is Tuesday, color Pink";
+                break;
+            case "wed":
+                message = "wed is Wednesday, color Greem";
+                break;
+            case "thu":
+                message = "thu is Monday, color Orange";
+                break;
+            case "fri":
+                message = "fri is Friday, color Blue";
+                break;
+            case "sat":
+                message = "sat is Saturday, color Purple";
+                break;
+            default:
+                message = "Incorrect day name";
+                break;
+        }
+        Console.WriteLine(message);
     }
 }
