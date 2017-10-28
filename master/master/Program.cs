@@ -1,22 +1,23 @@
 ﻿using System;
-public class GotoTest
+
+namespace ConsoleApp2
 {
-    static void Main(string[] args)
+    class BreakTest
     {
-        Console.WriteLine("Line 1");
-        goto line4;
-        Console.WriteLine("Line 2");
-        Console.WriteLine("Line 3");
-        line4:
-        Console.WriteLine("Line 4");
-        Console.WriteLine("Line 5");
-        goto line1;
-        Console.WriteLine("Line 6");
-        
-        Console.WriteLine("Line 7");
-        Console.WriteLine("Line 8");
-        Console.WriteLine("Line 9");
-        line1:
-        Console.WriteLine("Line 10");
+        static void Main()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i == 5)
+                {
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+
+            // Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
     }
 }
